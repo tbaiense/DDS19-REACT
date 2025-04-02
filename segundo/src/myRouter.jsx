@@ -8,6 +8,7 @@ import Cadastro from './pages/Cadastro';
 import Sobre from './pages/Sobre';
 import Home from './pages/Home';
 import Contato from './pages/Contato';
+import InfoCard from './components/InfoCard';
 
 const router = createBrowserRouter([
     {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
                 path: 'cadastro',
                 element: <Cadastro />,
             },
+            {
+                path: "/informacao/:id",
+                element: <InfoCard />
+            }
         ]
     }
 ]);
